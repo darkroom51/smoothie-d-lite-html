@@ -1,12 +1,32 @@
 @import "reset";
 @import "colors";
 @import "typography";
+@import "menuToggle";
+@import "navbar";
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: $main;
   background: $secondary;
-  text-align: center;
+  text-align: left;
+  // overflow-x: hidden;
+  // overflow-y: scroll;
 }
 
+/* TEMP HERO SECTION */
+#section-hero {
+  width: 100%;
+  height: calc(200vh);
+  background: #999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // margin-top: 100px;
+}
+
+#section-hero .heading {
+  font-family: 'Lobster', sans-serif;
+  font-size: 4rem;
+  color: white;
+}
 

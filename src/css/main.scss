@@ -1,0 +1,12 @@
+@import "reset";
+@import "colors";
+@import "typography";
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: $main;
+  background: $secondary;
+  text-align: center;
+}
+
+

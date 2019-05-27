@@ -1,7 +1,6 @@
 #menu-toggle {
     width: 55px;
     height: 55px;
-    background: #777;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +12,7 @@
     }
 
     &:hover {
-        .icon-bar {
+        span {
             width: 25px;
         }
     }

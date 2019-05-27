@@ -3,30 +3,192 @@
 @import "typography";
 @import "menuToggle";
 @import "navbar";
+@import "hero";
+
+html {
+  font-size: 10px;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
   color: $main;
-  background: $secondary;
+  background: $offWhite;
   text-align: left;
-  // overflow-x: hidden;
-  // overflow-y: scroll;
 }
 
-/* TEMP HERO SECTION */
-#section-hero {
-  width: 100%;
-  height: calc(200vh);
-  background: #999;
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  color: $mainMotif;
+  background: transparent;
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border: 2px solid $mainMotif;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    color: $offWhite;
+    background: $mainMotif;
+  }
+
+  &--white {
+    color: $offWhite;
+    border-color: $offWhite;
+    
+    &:hover {
+      color: $mainMotif;
+      background: $offWhite;
+    }
+  }
+}
+
+.g-heading {
+  font-family: 'Lobster';
+  font-size: 4rem;
+}
+
+.g-para {
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  margin: 1rem 0;
+}
+/*-------------end of global------------*/
+
+/* TEMP STYLES */
+.sign-cta{
+  text-align: center;
+  height: 30rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin-top: 100px;
+  background: url("https://cdn.pixabay.com/photo/2015/09/05/22/42/milkshakes-925869_960_720.jpg") top left;
+  background-size: cover;
+  // background: $mainMotif;  /* fallback for old browsers */
+  // background: linear-gradient(to right, $mainMotif, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  &__heading {
+    @extend .g-heading;
+    margin: 0 0 4rem;
+    color: $offWhite;
+  }
 }
 
-#section-hero .heading {
-  font-family: 'Lobster', sans-serif;
-  font-size: 4rem;
-  color: white;
+
+.signup {
+  width: 100%;
+  background: $mainMotif;  /* fallback for old browsers */
+  background: linear-gradient(to right, $mainMotif, #fd746c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 5rem 0;
+
+  &__content {
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 3rem;
+    }
+  }
+  
+  &__heading {
+    @extend .g-heading;
+    color: $offWhite;
+    text-align: center;
+    padding: 0 0 3rem;
+  }
+
+  &__para {
+    @extend .g-para;
+    margin: 2rem 0 4rem 0;
+    color: $offWhite;
+  }
+
+  &__input {
+    width:100%;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    margin-bottom: 4rem;
+  }
 }
 
+.info {
+  padding: 6rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10rem;
+  div.text {padding: 4rem;}
+  div:nth-child(1) { order: 1; }
+  div:nth-child(2) { order: 2; }
+  div:nth-child(3) { order: 4; }
+  div:nth-child(4) { order: 3; }
+  div:nth-child(5) { order: 5; }
+  div:nth-child(6) { order: 6; }
+  div:nth-child(7) { order: 8; }
+  div:nth-child(8) { order: 7; }
+  @media screen and (max-width: 1180px) {
+    padding: 6rem 2rem;
+  }
+  @media screen and (max-width: 1024px) {
+    div.text {padding: 1rem;}
+    grid-gap: 4rem;
+  }
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0rem;
+    div.image {margin-bottom: 4rem;}
+    div.image:last-child {margin-bottom: 0;}
+    div.text {padding: 1rem;}
+    div:nth-child(1) { order: 1; }
+    div:nth-child(2) { order: 2; }
+    div:nth-child(3) { order: 3; }
+    div:nth-child(4) { order: 4; }
+    div:nth-child(5) { order: 5; }
+    div:nth-child(6) { order: 6; }
+    div:nth-child(7) { order: 7; }
+    div:nth-child(8) { order: 8; }
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    h2 {
+      font-family: 'Lobster';
+      font-size: 4rem;
+    }
+  }
+
+  .image {
+    img {
+      width: 100%;
+      border-radius: 0.3rem;
+    }
+  }
+}
+
+.footer {
+  color: $offWhite;
+  background: $offGrey;
+  text-align: center;
+  padding: 2rem 0;
+}

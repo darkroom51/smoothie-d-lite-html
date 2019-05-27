@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   height="164.83809pt"
-   viewBox="-128 0 150.6459 164.83809"
-   width="150.9407pt"
+   height="130.56857pt"
+   viewBox="-128 0 128.87 130.56857"
+   width="129.12219pt"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -37,38 +37,38 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1539"
-     inkscape:window-height="876"
+     inkscape:window-width="1920"
+     inkscape:window-height="1056"
      id="namedview10"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:zoom="0.40517782"
-     inkscape:cx="224.4311"
-     inkscape:cy="-341.75478"
-     inkscape:window-x="61"
+     inkscape:zoom="1.4861796"
+     inkscape:cx="47.713717"
+     inkscape:cy="19.128051"
+     inkscape:window-x="0"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg2" />
   <circle
      style="opacity:1;fill:#ff8080;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:0.18058133;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="path4241"
-     cx="-53.286736"
+     cx="-63.586308"
      cy="64.561096"
      r="64.470802" />
   <g
      inkscape:groupmode="layer"
      id="layer1"
      inkscape:label="Layer 1"
-     transform="translate(-428.8494,411.55665)"
+     transform="translate(-439.14897,411.55665)"
      style="display:inline" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Layer 2"
-     transform="translate(-428.8494,411.55665)"
+     transform="translate(-439.14897,411.55665)"
      style="display:inline">
     <path
        d="m 362.0691,-382.47548 25.0003,0 c 3.72738,0 6.76049,-4.10326 6.76049,-9.14779 -9.1e-4,-5.04362 -3.03378,-9.14687 -6.76049,-9.14687 l -25.0003,0 c -3.72738,0 -6.75981,4.10325 -6.76048,9.14778 0,5.04362 3.0331,9.14688 6.76048,9.14688 z m 0,0"
@@ -87,16 +87,4 @@
        sodipodi:nodetypes="ccssssssc"
        style="fill:#ffffff" />
   </g>
-  <text
-     xml:space="preserve"
-     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.23002863px;line-height:125%;font-family:Pacifico;-inkscape-font-specification:Pacifico;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff8080;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     x="-131.41049"
-     y="154.73328"
-     id="text4316"
-     sodipodi:linespacing="125%"><tspan
-       sodipodi:role="line"
-       id="tspan4318"
-       x="-131.41049"
-       y="154.73328"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.30028534px;font-family:Pacifico;-inkscape-font-specification:Pacifico;fill:#ff8080;fill-opacity:1">SmoothieDelight</tspan></text>
 </svg>

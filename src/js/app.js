@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var backToTopOffset = 400;
     var logo = document.querySelector('#logo');
     var navBarElement = document.querySelector('.navbar');
-    var navLinks = document.querySelectorAll('.nav-item a');
+    var navLinks = document.querySelectorAll('.smooth');
     var menuToggleButton = document.querySelector('#menu-toggle');
     var menuUlElement = document.querySelector('.navbar__menu ul');
   

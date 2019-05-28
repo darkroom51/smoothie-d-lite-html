@@ -45,7 +45,7 @@
 				Tired of unhealthy fizzy drinks and alcohol? I bet you're not! :) But how about having something healthy and delicous. Try
 				something different this time.
 			</p>
-			<a href="#section-info" class="btn btn--primary smooth">Check this out</a>
+			<a href="#section-sign-cta" class="btn btn--primary smooth">Check this out</a>
 		</div>
 	</section>
 
@@ -72,7 +72,7 @@
 			<img src="./img/dose-juice-1184431-unsplash-info.jpg" alt="" />
 		</div>
 		<div class="info__text">
-			<h2 class="info__heading">Taste like it looks</h2>
+			<h2 class="info__heading">Taste a good as it looks :)</h2>
 			<p class="info__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quas culpa maiores molestiae ad dignissimos vero atque
 				rem, debitis obcaecati autem repellendus aperiam sunt, ea corporis sed eum dolorum odio!</p>
 		</div>
@@ -94,10 +94,15 @@
 			<h2 class="signup__heading">Be the firist to try</h2>
 			<p class="signup__para">Sign up to our mailing list and we'll let you know when we lanuch our new line. You'll also receive your free bottle of
 				lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim mollitia ex, nisi incidunt sit maiores impedit amet animi
-				officia!</p>
+                officia!</p>
+            <p class="signup__msg"></p>
 			<form id="signup-form">
-				<input type="email" class="signup__input" name="signup" placeholder="your email..." />
-				<button class="btn btn--secondary">subscribe</button>
+				<input type="text" class="signup__input" id="email" name="email" placeholder="Your email..." maxlength="128" />
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="gdpr" name="gdpr" />
+                    <label for="gdpr"><span>I agree with GDPR rules and so on and so on</span></label>
+                </div>
+                <button id="submit-btn" class="btn btn--secondary signup__btn">subscribe</button>
 			</form>
 		</div>
 	</section>

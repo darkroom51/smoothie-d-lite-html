@@ -35,4 +35,16 @@
       background: $offWhite;
     }
   }
+
+  &--disabled {
+    color: $offGrey;
+    border-color: $offGrey;
+    
+    &:hover {
+      cursor: not-allowed;
+      pointer-events: all !important;
+      background: transparent;
+      color: $offGrey;
+    }
+  }
 }

@@ -39,7 +39,7 @@
     .icon-bar {
         width: 25px;
         height: 2px;
-        background: #fff;
+        background: $offGrey;
         transition: 0.3s ease-in-out;
 
         &:nth-child(2) {

@@ -1,0 +1,22 @@
+@mixin mx-heading {
+    font-family: 'Lobster';
+    font-size: 4rem;
+    color: $main;
+}
+  
+@mixin mx-para {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    margin: 1rem 0;
+}
+
+@mixin mx-pinkish-gradient {
+    background: $mainMotif;
+    background: -webkit-linear-gradient(to right, $mainMotif, #fd746c);
+    background: linear-gradient(to right, $mainMotif, #fd746c);
+}
+
+@mixin mx-container {
+  max-width: 1440px;
+  margin: 0 auto;
+}

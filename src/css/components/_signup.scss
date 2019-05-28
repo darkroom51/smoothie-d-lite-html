@@ -1,0 +1,39 @@
+.signup {
+  width: 100%;
+  background: $mainMotif; 
+  background: linear-gradient(to right, $mainMotif, #fd746c);
+  padding: 5rem 0;
+
+  &__content {
+    text-align: center;
+    max-width: 768px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 3rem;
+    }
+  }
+  
+  &__heading {
+    @include mx-heading;
+    color: $offWhite;
+    text-align: center;
+    padding: 0 0 3rem;
+  }
+
+  &__para {
+    @include mx-para;
+    margin: 2rem 0 4rem 0;
+    color: $offWhite;
+  }
+
+  &__input {
+    width:100%;
+    font-size: 1.8rem;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    margin-bottom: 4rem;
+  }
+}

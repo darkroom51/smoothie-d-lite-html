@@ -1,0 +1,15 @@
+.sign-cta{
+    @include mx-pinkish-gradient;
+    text-align: center;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    &__heading {
+      @include mx-heading;
+      margin: 0 0 4rem;
+      color: $offWhite;
+    }
+}

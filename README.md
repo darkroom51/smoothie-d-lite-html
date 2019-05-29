@@ -1,6 +1,6 @@
 # smoothie-d-lite
 
-Simple landing page layout.
+Simple landing page layout. My goal was to create everything from scratch without using any CSS framework and any external JS libs. 
 
 ### Installation
 
@@ -25,4 +25,4 @@ Prod files will be stored in /dist folder
 
 ### Demo
 
-soon
+[http://smoothie-d-lite.surge.sh](http://smoothie-d-lite.surge.sh)

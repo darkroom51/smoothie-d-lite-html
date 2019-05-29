@@ -12,6 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
   var menuToggleButton = document.querySelector('#menu-toggle');
   var menuUlElement = document.querySelector('.navbar__menu ul');
   var signupForm = document.querySelector('#signup-form');
+  var msgElem = document.querySelector('.signup__msg');
+  var submitBtn = document.querySelector('#submit-btn');
+  var msgTimeoutHandler;
 
   // toggle mobile menu
   menuToggleButton.addEventListener('click', function () {
@@ -48,31 +51,38 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     var emailInput = document.querySelector('#email').value;
     var gdprCheckbox = document.querySelector('#gdpr').checked;
-    var submitBtn = document.querySelector('#submit-btn');
 
-    if (!gdprCheckbox || !validateEmail(emailInput)){
-      renderMsg('error', 'Ups! Please check is your email OK and you checked the checkbox', submitBtn);
+    if (!gdprCheckbox || !validateEmail(emailInput)) {
+      renderMsg('error', 'Ups! Please check is your email OK and you checked the checkbox');
       return;
     }
 
-    var data = {email: emailInput};
-    renderMsg('info', 'Great you have been registered! We\'ll contact you soon', submitBtn);
+    var data = { email: emailInput };
+    renderMsg('info', 'Great you have been registered! We\'ll contact you soon');
     document.getElementById('signup-form').reset();
     sendData(data);
   })
 
-  function renderMsg(type, msg, button){
-    var msgElem = document.querySelector('.signup__msg');
+  function renderMsg(type, msg) {
+    openMsgBox(type, msg);
+    msgTimeoutHandler = setTimeout(closeMsgBox, 6000);
+  }
+
+  function openMsgBox(type, msg) {
     msgElem.innerHTML = msg;
     msgElem.classList.add('show');
     msgElem.classList.add(type === 'error' ? 'show--error' : 'show--info');
-    button.disabled = true;
-    button.classList.add('btn--disabled');
-    setTimeout(function(){
-      msgElem.innerHTML = '';
-      msgElem.classList.remove('show', 'show--error', 'show--info');
-      button.disabled = false;
-      button.classList.remove('btn--disabled');
-    },6000);
+    submitBtn.disabled = true;
+    submitBtn.classList.add('btn--disabled');
   }
+
+  function closeMsgBox() {
+    msgElem.innerHTML = '';
+    msgElem.classList.remove('show', 'show--error', 'show--info');
+    submitBtn.disabled = false;
+    submitBtn.classList.remove('btn--disabled');
+    clearTimeout(msgTimeoutHandler);
+  }
+
+  msgElem.addEventListener('click', closeMsgBox);
 });

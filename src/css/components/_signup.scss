@@ -51,12 +51,24 @@
     border-radius: 0.3rem;
     margin:0;
     transition: all .3s ease-in-out;
+    cursor: pointer;
+    position: relative;
     height: 0;
+    transform: scale(0);
 
     &.show {
       height: auto;
+      transform: scale(1);
       margin:1rem 0;
       padding: 2rem;
+
+      &:after {
+        content:'\00d7';
+        position: absolute;
+        font-size: 2rem;
+        top: .6rem;
+        right:1rem;
+      }
 
       &--error{
         color: $mainMotif;

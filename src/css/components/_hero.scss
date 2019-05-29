@@ -1,7 +1,7 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background: #F7F78C;
+    background: $offYellow;
     background: url('../img/dose-juice-1184437-unsplash-hero.jpg') no-repeat top left;
     background-size: cover;
     display: flex;
@@ -13,7 +13,7 @@
       width: 60vw;
       padding: 4rem;
       border-radius: 10px;
-      background: rgba($color: #fff, $alpha: .7);
+      background: rgba($color: $offWhite, $alpha: .7);
       z-index: 3;
       @media screen and (max-width: $mobile) {
         width: 80vw;
@@ -32,6 +32,7 @@
     &__heading {
       @include mx-heading;
       color: $main;
+      text-shadow: 0px 0px 8px $offWhite;
       margin:0;
       padding-bottom: 2rem;
       @media screen and (min-width: $large) {
@@ -46,7 +47,8 @@
   
     &__para {
       @include mx-para;
-      font-weight: 600;
+      font-weight: 700;
+      text-shadow: 1px 1px 4px $offWhite;
       margin:0;
       padding-bottom: 2rem;
       @media screen and (max-width: $small) {

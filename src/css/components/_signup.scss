@@ -1,9 +1,8 @@
 @import 'customCheckbox';
 
 .signup {
+  @include mx-pinkish-gradient;
   width: 100%;
-  background: $mainMotif; 
-  background: linear-gradient(to right, $mainMotif, #fd746c);
   padding: 6rem 0;
 
   &__content {
@@ -11,7 +10,7 @@
     max-width: 768px;
     margin: 0 auto;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: $mobile) {
       padding: 0 3rem;
     }
   }

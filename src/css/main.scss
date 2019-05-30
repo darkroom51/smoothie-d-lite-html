@@ -11,10 +11,11 @@
 @import "components/signup";
 
 html {
-  font-size: 10px; // setting rem = 10px;
+  font-size: 62.5%;
 }
 
 body {
+  font-size: 1.6rem;
   font-family: 'Open Sans', sans-serif;
   color: $main;
   background: $offWhite;
